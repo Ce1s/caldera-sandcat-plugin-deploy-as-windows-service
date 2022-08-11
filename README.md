@@ -33,6 +33,6 @@ Steps to perform when you no longer need the agent on the target host.
 - Randomly-named Sandcat agent executable
 - Randomly-named Windows Service [nssm remove <service_name>]
 
-## REPOSITORY MAINTAINER
+## Maintainer
 I made this as a proof-of-concept for Caldera extensibility, as part of a study project. I'm not a Powershell expert - please let me know of any issues or suggestions for improvement.
   

